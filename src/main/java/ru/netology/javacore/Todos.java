@@ -1,6 +1,5 @@
 package ru.netology.javacore;
 
-import lombok.Data;
 import lombok.Getter;
 
 import java.util.*;
@@ -17,6 +16,11 @@ public class Todos {
         private String task;
 
         Task(){};
+
+        @Override
+        public String toString() {
+            return "Task [type=" + type + ", task=" + task + "]";
+        }
     }
 
     private List <String> tasks = new ArrayList<>();
@@ -40,6 +44,5 @@ public class Todos {
 
         return tasks.get(index);
     }
-
 
 }

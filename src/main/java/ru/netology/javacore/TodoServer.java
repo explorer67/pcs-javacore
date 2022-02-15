@@ -25,6 +25,7 @@ public class TodoServer {
             } else if ("REMOVE".equals(task.getType())) {
                 todos.removeTask(task.getTask());
             }
+            System.out.println(task);
 
             /* Почему так не срабатывает? Почему ругается на task.type
             если выше task объявлен  Todos.Task.task = ... ? что я делаю не так?
