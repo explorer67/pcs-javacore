@@ -11,12 +11,12 @@ public class TodosTests {
     @BeforeEach
     public void  init(){
         System.out.println("test started");
+        todos = new Todos();
     }
 
     @BeforeAll
     public static void started(){
         System.out.println("tests started");
-        todos = new Todos();
     }
 
     @AfterEach
