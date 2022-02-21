@@ -9,13 +9,13 @@ public class TodosTests {
     static Todos todos = null;
 
     @BeforeEach
-    public void  init(){
+    public void init() {
         System.out.println("test started");
         todos = new Todos();
     }
 
     @BeforeAll
-    public static void started(){
+    public static void started() {
         System.out.println("tests started");
     }
 
@@ -25,7 +25,7 @@ public class TodosTests {
     }
 
     @AfterAll
-    public static void finishedAll(){
+    public static void finishedAll() {
         System.out.println("tests completed");
     }
 

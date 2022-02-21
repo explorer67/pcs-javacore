@@ -8,14 +8,12 @@ public class Todos {
 
     @Getter
     static class Task {
-        /*
-         public enum type {
-            ADD, REMOVE
-        }*/
+
         private String type;
         private String task;
 
-        Task(){};
+        Task() {
+        }
 
         @Override
         public String toString() {
@@ -23,7 +21,7 @@ public class Todos {
         }
     }
 
-    private List <String> tasks = new ArrayList<>();
+    private final List<String> tasks = new ArrayList<>();
 
     public void addTask(String task) {
         tasks.add(task);
@@ -40,7 +38,7 @@ public class Todos {
         return tasks.toString();
     }
 
-    public String getTasksElementByIndex (int index) {
+    public String getTasksElementByIndex(int index) {
 
         return tasks.get(index);
     }
