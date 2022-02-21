@@ -29,7 +29,7 @@ public class TodoServer {
                 System.out.println(task);
                 System.out.println(todos.getAllTasks());
             } catch (IOException e) {
-                System.err.println(e);
+                System.err.println(e.getMessage());
             }
         }
 
