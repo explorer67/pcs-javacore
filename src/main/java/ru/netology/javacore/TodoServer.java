@@ -27,7 +27,7 @@ public class TodoServer {
                     todos.removeTask(task.getTask());
                 }
                 System.out.println(task);
-                System.out.println(todos.getAllTasks());
+                out.println(todos.getAllTasks());
             } catch (IOException e) {
                 System.err.println(e.getMessage());
             }
